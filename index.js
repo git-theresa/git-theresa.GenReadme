@@ -68,9 +68,15 @@ function inquireQuestions () {
         "ISC", 
         "Apache", 
         "GPL"
+<<<<<<< HEAD
     ],
         name: "license"
       }
+=======
+    ]
+
+      },
+>>>>>>> eb9e6f1f59b3d7569d89ea2843af2220261b59f8
     
 
   ])
@@ -127,6 +133,7 @@ ${res.license}
 
 //         console.log(err);
 
+<<<<<<< HEAD
 //       });
 
 //     //end function
@@ -137,8 +144,88 @@ ${res.license}
 // githubAPICall();
 
 
+=======
+    //end function
+}
+
+axios
+.get(queryUrl)
+.then(function()) {
+
+` # Project
+${res.project}
+// ## Live Link
+
+
+## Description
+${res.description}
+
+## Technology Stack
+${res.technology}
+## Contributors
+${res.contributors}
+## Contributors
+${res.contributors}
+## Contact
+* #### Name:  ()
+${res.name}
+* #### Email: []()
+${res.email}
+* #### LinkedIn: "https:www.linkedin.com/in/
+## License
+${res.license}
+`
+
+
+}
+
+
+// githubAPICall();
+
+//         fs.writeFile("repos.txt", JSON.stringify(repos), + '/n', function(err) {
+    
+//           if (err) {
+//             return console.log(err);
+//           }
+        
+//           console.log("Success!");
+        
+//         });
+//             fs.writeFile('log.txt', JSON.stringify(response), function(err) {
+//         if (err) {
+//             console.log('error');
+//         }
+//         else{
+//             console.log('success');
+//         }
+//     })  
+    
+>>>>>>> eb9e6f1f59b3d7569d89ea2843af2220261b59f8
 inquireQuestions();
 
 
 
+<<<<<<< HEAD
   
+=======
+  //end function
+
+// githubAPICall()
+// fs.writeFile("repos.txt", JSON.stringify(repos), + '/n', function(err) {
+
+//   if (err) {
+//     return console.log(err);
+//   }
+
+//   console.log("Success!");
+
+// });
+// fs.writeFile('log.txt', JSON.stringify(response), function(err) {
+//     if (err) {
+//         console.log('error');
+//     }
+//     else{
+//         console.log('success');
+//     }
+// })   
+>>>>>>> eb9e6f1f59b3d7569d89ea2843af2220261b59f8
