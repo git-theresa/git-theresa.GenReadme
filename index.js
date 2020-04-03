@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const axios = require('axios');
+const datafire = require('datafire');
 // const primeng = require('primeng');
 
 function inquireQuestions () {
@@ -59,9 +60,16 @@ function inquireQuestions () {
         name: "technology"
       },
       {
-        type: "input",
-        message: "",
-        name: ""
+        type: "list",
+        message: "What license do you want to use?",
+        choices: [
+            "MIT", 
+        "BSD", 
+        "ISC", 
+        "Apache", 
+        "GPL"
+    ]
+
       },
     
 
@@ -92,22 +100,80 @@ function githubAPICall () {
 
     //end function
 }
-githubAPICall();
 
-        fs.writeFile("repos.txt", JSON.stringify(repos), + '/n', function(err) {
+axios
+.get(queryUrl)
+.then(function()) {
+
+` # Project
+${res.project}
+// ## Live Link
+
+
+## Description
+${res.description}
+
+## Technology Stack
+${res.technology}
+## Contributors
+${res.contributors}
+## Contributors
+${res.contributors}
+## Contact
+* #### Name:  ()
+${res.name}
+* #### Email: []()
+${res.email}
+* #### LinkedIn: "https:www.linkedin.com/in/
+## License
+${res.license}
+`
+
+
+}
+
+
+// githubAPICall();
+
+//         fs.writeFile("repos.txt", JSON.stringify(repos), + '/n', function(err) {
     
-          if (err) {
-            return console.log(err);
-          }
+//           if (err) {
+//             return console.log(err);
+//           }
         
-          console.log("Success!");
+//           console.log("Success!");
         
-        });
-            fs.writeFile('log.txt', JSON.stringify(response), function(err) {
-        if (err) {
-            console.log('error');
-        }
-        else{
-            console.log('success');
-        }
-    })  
+//         });
+//             fs.writeFile('log.txt', JSON.stringify(response), function(err) {
+//         if (err) {
+//             console.log('error');
+//         }
+//         else{
+//             console.log('success');
+//         }
+//     })  
+    
+inquireQuestions();
+
+
+
+  //end function
+
+// githubAPICall()
+// fs.writeFile("repos.txt", JSON.stringify(repos), + '/n', function(err) {
+
+//   if (err) {
+//     return console.log(err);
+//   }
+
+//   console.log("Success!");
+
+// });
+// fs.writeFile('log.txt', JSON.stringify(response), function(err) {
+//     if (err) {
+//         console.log('error');
+//     }
+//     else{
+//         console.log('success');
+//     }
+// })   
