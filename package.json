@@ -1,0 +1,27 @@
+{
+  "name": "git-theresa.genreadme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "datafire": "^2.26.2",
+    "dotenv": "^8.2.0",
+    "fs": "^0.0.1-security",
+    "inquirer": "^7.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/git-theresa/git-theresa.GenReadme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/git-theresa/git-theresa.GenReadme/issues"
+  },
+  "homepage": "https://github.com/git-theresa/git-theresa.GenReadme#readme"
+}
